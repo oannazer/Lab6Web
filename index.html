@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Praktikum DOM dan Event</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<nav>
+			<h2>Navigasi</h2>
+			<a href="mini project/index.html">Mini Project</a>
+		</nav>
+		<h1 id="judul">Latihan DOM</h1>
+		<p id="pesan">Belum ada tindakan.</p>
+		<button id="tombolAksi" type="button">Klik Saya</button>
+
+		<p id="teksGaya">Contoh Teks</p>
+		<button id="tombolGaya">Klik Saya</button>
+		<br />
+		<br />
+		<label for="namaInput">Nama:</label>
+		<input type="text" id="namaInput" maxlength="40" />
+		<p>Jumlah karakter: <span id="jumlahKarakter">0</span></p>
+
+		<h2>Pendaftaran</h2>
+		<form id="formPendaftaran" novalidate>
+			<label for="nama">Nama lengkap</label>
+			<input id="nama" name="nama" type="text" />
+			<label for="email">Email</label>
+			<input id="email" name="email" type="email" />
+			<label for="usia">Usia</label>
+			<input id="usia" name="usia" type="number" min="17" max="100" />
+			<button type="submit">Daftar</button>
+		</form>
+		<p id="pesanForm" aria-live="polite"></p>
+
+		<section>
+			<h2>Daftar Tugas</h2>
+			<label for="inputTugas">Tugas baru</label>
+			<input id="inputTugas" type="text" />
+			<button id="tambahTugas" type="button">Tambah</button>
+			<p id="pesanTugas" aria-live="polite"></p>
+			<ul id="daftarTugas"></ul>
+		</section>
+
+		<br /><br /><br /><br /><br />
+	</body>
+</html>
